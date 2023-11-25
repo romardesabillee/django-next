@@ -6,6 +6,7 @@ from collections import OrderedDict
 from .serializers import (
     AlbumSerializer,
 )
+from rest_framework.permissions import IsAuthenticated
 
 class AlbumViewPagination(PageNumberPagination):
     page_size = 1
@@ -14,6 +15,7 @@ class AlbumViewPagination(PageNumberPagination):
 class AlbumView(ModelViewSet):
     serializer_class = AlbumSerializer
     pagination_class = AlbumViewPagination
+    permission_classes = (IsAuthenticated,)
 
     queryset = Album.objects.all()
     lookup_field = 'id'

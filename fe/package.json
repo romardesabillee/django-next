@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
     "axios": "^1.6.2",
+    "cookiejs": "^2.1.2",
     "dayjs": "^1.11.10",
     "materialui-pagination-component": "^1.1.12",
     "next": "14.0.3",
