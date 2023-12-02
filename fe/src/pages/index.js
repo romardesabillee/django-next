@@ -16,7 +16,7 @@ export default function Login() {
         setState({
             ...state,
             [event.target.name]: event.target.value,
-        })
+        });
     }
 
     async function handleSubmit(){
